@@ -1,4 +1,4 @@
-package com.example.jwt.domain.member;
+package com.example.jwt.domain;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
