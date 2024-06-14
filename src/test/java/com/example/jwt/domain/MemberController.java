@@ -54,7 +54,7 @@ class MemberControllerTest {
         MockHttpServletResponse response = mvcResult.getResponse();
 
         String authentication = response.getHeader("Authentication");
-        System.out.println("authentication" + authentication);
+        System.out.println("authentication : " + authentication);
 
 
         assertThat(authentication).isNotEmpty();
