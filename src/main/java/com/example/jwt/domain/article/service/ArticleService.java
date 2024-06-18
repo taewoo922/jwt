@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -33,5 +34,9 @@ public class ArticleService {
                 "게시물이 생성 되었습니다.",
                 article
         );
+    }
+
+    public List<Article> findAll() {
+        return articleRepository.findAll();
     }
 }
