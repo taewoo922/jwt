@@ -39,4 +39,8 @@ public class ArticleService {
     public List<Article> findAll() {
         return articleRepository.findAll();
     }
+
+    public Optional<Article> findById(Long id) {
+        return articleRepository.findById(id);
+    }
 }
